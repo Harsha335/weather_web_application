@@ -1,0 +1,43 @@
+<!doctype html>
+<html>
+<head>
+	<title>WEATHER</title>
+	<meta charset="UTF-8">
+	<meta name="viewport" content="width=device-width,intial-scale:1.0">
+	<meta name="author" content="harsha">
+	<link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
+	<link rel="stylesheet" href="weather.css">
+	<script src="weather.js">
+	</script>
+</head>
+<body>
+	<input type="search" id="searchbar" placeholder="location..." name="location1" autofocus>
+	<button onclick="details()" id="button">search</button>
+	<div id=locate>
+		<p id="temperature"> <b> <span id="temp">25</span> <sup><i>°c</i></sup> </b> <br></p>
+		<p id="loc"><i class="fa fa-map-marker" ></i><span style="padding-left:10px;"><span id="city">Tirupati</span>,<span id="country">In</span></span></p>	
+	</div>
+	<div id="dataa" >
+		<p id="main" style="font-size:2rem">Rain</p>
+		<img id="picture" src="http://openweathermap.org/img/wn/10d@2x.png" style="width:30%;margin-top:-10%;">
+		<p id="description" style="margin-top:-8%;">light rain</p>
+		<div id="flex-container" style="line-height:20px;">
+			
+			<div><img src="https://cdn-icons-png.flaticon.com/512/6218/6218295.png" width="20%" style="float:left;"><p ><b>tempareture</b><br>
+				<span id="tempa" style="text-decoration-line:underline">-NA-</span><span><sup><i>°c</i></sup></span></p>
+			</div>
+			<div><img src="https://cdn-icons-png.flaticon.com/512/5532/5532989.png" width="20%" style="float:left;"><p><b>windspeed</b><br>
+				<span id="windspeed" style="text-decoration-line:underline">-NA-</span><span>(m/s)</span></p>
+			</div>
+			<div><img src="https://cdn-icons-png.flaticon.com/512/6566/6566344.png" width="20%" style="float:left;"><p><b>humidity</b><br>
+				<p><span id="humidity" style="text-decoration-line:underline">-NA-</span><span>(g m³)</span></p>
+			</div>
+			<div><img src="https://cdn-icons-png.flaticon.com/512/556/556856.png" width="20%" style="float:left;"><p><b>pressure</b><br>
+				<span id="pressure" style="text-decoration-line:underline">-NA-</span><span>(Pa)</span></p>
+			</div>
+			
+		</div>
+	</div>
+	
+</body>
+</html>
